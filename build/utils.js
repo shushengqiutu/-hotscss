@@ -64,7 +64,7 @@ exports.cssLoaders = function(options) {
         scss: generateLoaders('sass').concat({
             loader: 'sass-resources-loader',
             options: {
-                resources: path.resolve(__dirname, '../static/lib/hotcss/px2rem.scss')
+                resources: path.resolve(__dirname, '../static/lib/hotcss/pulic.scss')
             }
         }),
         stylus: generateLoaders('stylus'),

@@ -10,7 +10,9 @@ export default {
 
  div{
     width: px2rem(375);
-     background-color: red;
+    background-color:$color;
+    font-size: px2rem(30);
+
  }
 
 </style>
