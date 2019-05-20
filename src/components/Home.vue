@@ -1,4 +1,4 @@
- 
+
 
 <template>
     <div v-text="title"></div>
@@ -13,14 +13,19 @@ export default {
          }
      },
    async  created(){
-       
-       const a= await getMusic(
-         { phone:"13379156493", password:"13379156697111" }
-       )
-      console.log(a) 
+       try {
+           const a = await getMusic({
+               phone:"13379156493",
+               password:"1337915669711"
+           });
+           console.log(a)
+       }   catch (e){
+           alert(e.message)
+       }
+
      }
-    
-   
+
+
 
 }
 </script>

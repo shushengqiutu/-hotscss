@@ -19,11 +19,10 @@ export default function ajax(url, data = {}, type = "GET") {
         }
         promise.then(function(req) {
 
-            resolve(req.data)
+          resolve(req.data)
         }).catch(function(error) {
-
-            reject(error)
-        })
+            reject(error.response.data)
+         })
 
 
     })
